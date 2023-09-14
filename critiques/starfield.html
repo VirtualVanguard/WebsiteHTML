@@ -8,6 +8,8 @@
 		<!-- TAILWINDCSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
 
+		<link rel="stylesheet" type="text/css" href="../ressources/css/slider.css">
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -58,7 +60,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="group w-full aspect-video border-b border-white/25 bg-[url('https://images.alphacoders.com/132/1327999.jpeg')] bg-center bg-cover flex items-center justify-center">
+					<div id="slider" class="group relative w-full aspect-video border-t border-b border-white/25 bg-[url('https://images.alphacoders.com/132/1327999.jpeg')] bg-center bg-cover flex items-center justify-center transition-all">
+						<div class="absolute bottom-5 left-5 w-full opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
+							<div id="slider_content" class="px-2 py-1 bg-stone-950/25 backdrop-blur-sm border border-white/25 text-white text-sm transition-all"></div>
+						</div>
 						<div class="w-full flex items-center justify-between px-10 opacity-0 group-hover:opacity-100 transition-all">
 							<div id="slider_nextImage" class="p-4 border border-white/25 bg-stone-950 text-white rounded-full cursor-pointer">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -241,10 +246,24 @@
 			<p class="absolute bottom-12 right-12 text-md text-white">© 2022 VirtualVanguard</p>
 		</div>
 
+		<script type="text/javascript">
+			// Liste des URLs des images à afficher dans le slider
+	        const imageUrls = [
+	            'https://images.alphacoders.com/132/1327999.jpeg',
+	            'https://images7.alphacoders.com/131/1318988.jpeg',
+	            'https://images5.alphacoders.com/132/1324384.png',
+	            'https://images.ctfassets.net/rporu91m20dc/2IGcp6tavPJSgdZPLUqRI8/a1546de56e89c7f02e390b7e4fac0d34/SaturnSet1920.png',
+	            'https://beanstalk.io/wp-content/uploads/2022/10/17-1.png',
+	            'https://rare-gallery.com/mocahbig/1361485-Starfield-4k-Ultra-HD-Wallpaper.jpg',
+	            // Ajoutez ici d'autres URLs d'images
+	        ];
+		</script>
+
 		<!-- Jquery -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<!-- Javascript -->
+		<script type="text/javascript" src="../ressources/javascript/slider.js"></script>
 		<script type="text/javascript" src="../ressources/javascript/header.js"></script>
 		<script type="text/javascript" src="../ressources/javascript/parallax.js"></script>
 
