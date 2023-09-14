@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>srgknerjklg</title>
+	</head>
+	<body>
+		<div>
+			<p>virtualvanguard_critiques</p>
+			<ul>
+				<li>critique_id - primary key</li>
+				<li>critique_nom - text</li>
+				<li>critique_note - int</li>
+				<li>critique_content - long text</li>
+				<li>critique_auteur - text</li>
+				<li>critique_couleur - text</li>
+				<li>critique_link - text</li>
+				<li>critique_date_upload - datetime</li>
+				<li>jeu_id - foreign key</li>
+			</ul>
+		</div>
+		<div>
+			<p>virtualvanguard_critiques_images</p>
+			<ul>
+				<li>critique_image_id - primary key</li>
+				<li>critique_image_nom - text</li>
+				<li>critique_image_auteur - text</li>
+				<li>critique_image_date_upload - datetime</li>
+				<li>critique_image_link - text</li>
+				<li>critique_id - foreign key</li>
+				<li>jeu_id - foreign key</li>
+			</ul>
+		</div>
+		<div>
+			<p>virtualvanguard_jeux</p>
+			<ul>
+				<li>jeu_id - primary key</li>
+				<li>jeu_nom - text</li>
+				<li>jeu_developer - text</li>
+				<li>jeu_plateformes - text</li>
+				<li>jeu_date_upload - text</li>
+				<li>critique_id - foreign key</li>
+			</ul>
+		</div>
+		<div>
+			<p>virtualvanguard_articles</p>
+			<ul>
+				<li>article_id - primary key</li>
+				<li>article_nom - text</li>
+				<li>article_auteur - text</li>
+				<li>article_content - long text</li>
+				<li>article_link - text</li>
+				<li>article_date_upload - datetime</li>
+			</ul>
+		</div>
+		<div>
+			<p>virtualvanguard_dossiers</p>
+			<ul>
+				<li>dossier_id - primary key</li>
+				<li>dossier_nom - text</li>
+				<li>dossier_auteur - text</li>
+				<li>dossier_content - long text</li>
+				<li>dossier_link - text</li>
+				<li>dossier_date_upload - datetime</li>
+			</ul>
+		</div>
+	</body>
+</html>

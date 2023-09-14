@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>VirtualVanguard - Critiques / articles sur le jeu vidéo</title>
+
+		<!-- TAILWINDCSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	</head>
+	<body style="font-family: Nunito, sans-serif;" class="bg-stone-950">
+
+		<div id="box_search" class="hidden z-[100] overflow-hidden w-full h-[100vh] bg-stone-950/10 backdrop-blur-md flex items-center justify-center">
+			<div class="p-10 bg-stone-950 border border-white/25 grid grid-cols-1 gap-2">
+				<form action="" method="post" class="w-full grid grid-cols-1 gap-2">
+					<input type="text" name="" class="w-[50rem] bg-stone-950 p-3 border border-white/25 placeholder:text-white/50 text-white text-2xl shadow-xl shadow-stone-950/10" placeholder="Chercher un jeu, une critique, un article ou un dossier...">
+					<input type="submit" name="" class="w-[50rem] py-3 bg-white border border-stone-950 hover:border-white text-xl text-stone-950 hover:rounded-tl-xl hover:rounded-br-xl hover:bg-stone-950 hover:text-white transition-all cursor-pointer" value="Lancer la recherche">
+				</form>
+				<a id="box_search_togglebutton2" class="w-[50rem] py-3 bg-white border border-stone-950 hover:border-white text-xl text-stone-950 hover:rounded-tl-xl hover:rounded-br-xl hover:bg-stone-950 hover:px-12 hover:text-white transition-all cursor-pointer text-center" data-toggle="box_search">Annuler la recherche</a>
+			</div>
+		</div>
+
+		<div class="sticky top-0 z-[50] w-full px-12 py-6 bg-stone-950 border-b border-white/25 flex items-center justify-between shadow-xl shadow-stone-950/5 sticky-header transition-all">
+			<div class="flex items-center gap-x-10">
+				<div class="flex items-center gap-x-3">
+					<img src="ressources/images/logo.png" class="w-16 aspect-square">
+					<a href="index.html"><h1 class="text-3xl text-white">VirtualVanguard</h1></a>
+				</div>
+				<div class="flex items-center gap-x-4">
+					<a href="index.html" class="text-lg text-white hover:text-white hover:underline transition-all">Accueil</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Critiques</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Articles</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Dossiers</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Présentation</a>
+				</div>
+			</div>
+			<div class="flex items-center gap-x-10">
+				<div id="box_search_togglebutton1" class="p-3 border border-white/25 hover:border-white text-white rounded-full flex items-center justify-center cursor-pointer transition-all" data-toggle="box_search">
+				    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+				        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+				    </svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full parallax-bg" style="background-image: url('https://images.alphacoders.com/132/1327999.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+			<div class="w-full py-56 bg-stone-950/50">
+				<p class="text-8xl text-white text-center">Starfield</p>
+				<p class="mt-2 text-3xl text-white text-center">Une épopée cosmique attendue depuis longtemps</p>
+				<p class="mt-5 text-lg text-white/75 text-center">Critique uploadée le 13/09/2023 à 23h05</p>
+				<div class="mt-10 w-full flex items-center justify-center">
+					<a href="critiques/starfield.html" class="px-6 py-3 bg-white border border-stone-950 hover:border-white text-xl text-stone-950 hover:rounded-tl-xl hover:rounded-br-xl hover:bg-stone-950 hover:px-12 hover:text-white transition-all cursor-pointer">Voir la critique</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full bg-stone-950 border-t border-white/25 p-12">
+			<div class="w-full flex items-center justify-between">
+				<p class="text-xl text-white">Critiques ajoutées les plus récentes</p>
+				<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Voir toutes les critiques</a>
+			</div>
+			<div class="mt-8 w-full grid sm:grid-cols-5 grid-cols-1 gap-10">
+
+				<a href="critiques/starfield.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-violet-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images.alphacoders.com/132/1327999.jpeg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Starfield</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/gta5.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images7.alphacoders.com/439/439636.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Grand Theft Auto 5</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">96</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/rdr2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-orange-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpaper.dog/large/20576814.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Red Dead Redemption 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">97</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/tlou2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://c4.wallpaperflare.com/wallpaper/738/436/859/naughty-dog-the-last-of-us-part-ii-playstation-ellie-ashley-johnson-hd-wallpaper-preview.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">The Last Of Us 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/minecraft.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Minecraft</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-blue-500 flex items-center justify-center">
+										<p class="text-lg text-white">100</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+
+		<div class="w-full bg-stone-950 border-t border-white/25 p-12">
+			<div class="w-full flex items-center justify-between">
+				<p class="text-xl text-white">Articles ajoutés les plus récents</p>
+				<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Voir touts les articles</a>
+			</div>
+			<div class="mt-8 w-full grid sm:grid-cols-5 grid-cols-1 gap-10">
+
+				<a href="critiques/starfield.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-violet-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images.alphacoders.com/132/1327999.jpeg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Starfield</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/gta5.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images7.alphacoders.com/439/439636.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Grand Theft Auto 5</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">96</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/rdr2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-orange-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpaper.dog/large/20576814.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Red Dead Redemption 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">97</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/tlou2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://c4.wallpaperflare.com/wallpaper/738/436/859/naughty-dog-the-last-of-us-part-ii-playstation-ellie-ashley-johnson-hd-wallpaper-preview.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">The Last Of Us 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/minecraft.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Minecraft</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-blue-500 flex items-center justify-center">
+										<p class="text-lg text-white">100</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+
+		<div class="w-full bg-stone-950 border-t border-white/25 p-12">
+			<div class="w-full flex items-center justify-between">
+				<p class="text-xl text-white">Dossiers ajoutés les plus récents</p>
+				<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Voir touts les dossiers</a>
+			</div>
+			<div class="mt-8 w-full grid sm:grid-cols-5 grid-cols-1 gap-10">
+
+				<a href="critiques/starfield.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-violet-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images.alphacoders.com/132/1327999.jpeg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Starfield</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/gta5.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://images7.alphacoders.com/439/439636.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Grand Theft Auto 5</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">96</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/rdr2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-orange-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpaper.dog/large/20576814.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Red Dead Redemption 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">97</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/tlou2.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://c4.wallpaperflare.com/wallpaper/738/436/859/naughty-dog-the-last-of-us-part-ii-playstation-ellie-ashley-johnson-hd-wallpaper-preview.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">The Last Of Us 2</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-green-500 flex items-center justify-center">
+										<p class="text-lg text-white">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="critiques/minecraft.html">
+					<div class="group w-full border border-white/25 hover:border-white/75 transition-all cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+						<div class="w-full h-[12rem] bg-[url('https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg')] bg-center bg-cover"></div>
+						<div class="w-full p-5 border-t border-white/25 group-hover:border-white/75 transition-all">
+							<div class="w-full flex items-center justify-between">
+								<div class="block">
+									<p class="text-lg text-white">Minecraft</p>
+									<p class="mt-1 text-sm text-white/75">13/09/2023 à 23h05</p>
+								</div>
+								<div class="block">
+									<div class="w-10 aspect-square rounded-full border border-white bg-blue-500 flex items-center justify-center">
+										<p class="text-lg text-white">100</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+
+		<div class="relative w-full bg-stone-950 border-t border-white/25 p-12 sm:flex sm:items-start sm:justify-between grid grid-cols-1 gap-y-10">
+			<div class="w-1/2 block">
+				<p class="text-2xl text-white">Explore a collection of video games interfaces and find inspiration for your designs.</p>
+				<div class="mt-10 mb-5 sm:flex sm:items-center grid grid-cols-1 gap-5">
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Cookie policy</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Copyright complaints</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Privacy policy</a>
+					<a href="#" class="text-lg text-white/50 hover:text-white hover:underline transition-all">Terms and conditions</a>
+				</div>
+				<p class="text-lg text-white/50">Video games, pictures, all trademarks, and registered trademarks are the property of their respective owners.</p>
+			</div>
+			<div class="w-1/2 flex items-center sm:justify-end justify-start">
+				<div class="mb-5 sm:flex sm:items-center grid grid-cols-1 gap-10">
+					<a href="#" class="text-xl text-white hover:text-white/50 hover:underline transition-all">Accueil</a>
+					<a href="#" class="text-xl text-white hover:text-white/50 hover:underline transition-all">Critiques</a>
+					<a href="#" class="text-xl text-white hover:text-white/50 hover:underline transition-all">Articles</a>
+					<a href="#" class="text-xl text-white hover:text-white/50 hover:underline transition-all">Dossiers</a>
+					<a href="#" class="text-xl text-white hover:text-white/50 hover:underline transition-all">Présentation</a>
+					<div class="w-full flex items-center justify-center gap-5">
+						<div class="p-3 border border-white/25 hover:border-white text-white rounded-full flex items-center justify-center cursor-pointer transition-all">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+							  	<path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						<div class="p-3 border border-white/25 hover:border-white text-white rounded-full flex items-center justify-center cursor-pointer transition-all">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+							  	<path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="absolute bottom-12 right-12 text-md text-white">© 2022 VirtualVanguard</p>
+		</div>
+
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="ressources/javascript/header.js"></script>
+		<script type="text/javascript" src="ressources/javascript/parallax.js"></script>
+		<script type="text/javascript" src="ressources/javascript/box_search.js"></script>
+
+	</body>
+</html>
